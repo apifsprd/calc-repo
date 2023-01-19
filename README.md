@@ -14,5 +14,5 @@ Calc repo adalah sebuah web repositori kalkulator
 
 1. Lakukan cloning git ini ke lokal
 2. Install package dengan npm install atau yarn install
-3. Secara otomatis akan terbuka tab di browser, aplikasi akan berjalan pada http://localhost:3000/
+3. Memulai aplikasi dengan perintah yarn start atau npm start Secara otomatis akan terbuka tab di browser, aplikasi akan berjalan pada http://localhost:3000/
 4. Selesai
