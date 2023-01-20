@@ -9,6 +9,7 @@ Calc repo adalah sebuah web repositori kalkulator
 - ReactBootstrap
 - ReactRouter
 - History
+- React-currency-input-field
 
 ## Cara menjalankan / How to start
 
