@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Alert from "react-bootstrap/Alert";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function Bmi() {
   const [height, setHeight] = useState("");
@@ -18,7 +20,7 @@ export default function Bmi() {
     event.preventDefault();
 
     if (!height || !weight) {
-      return setNotif("Isi dulu samin, gua itung apaan kalo kosong");
+      return setNotif("Data berat dan tinggi harus di isi");
     }
 
     setNotif("");
@@ -128,9 +130,15 @@ export default function Bmi() {
               <InputGroup.Text id="basic-addon2">Kg</InputGroup.Text>
             </InputGroup>
 
-            <Button variant="info" type="submit" size="sm">
-              Calculate &rarr;
-            </Button>
+            <Row>
+              <Col>
+                <div className="d-grid gap-2">
+                  <Button variant="info" size="md" type="submit">
+                    Calculate &rarr;
+                  </Button>
+                </div>
+              </Col>
+            </Row>
           </Form>
         </Card.Body>
       </Card>
